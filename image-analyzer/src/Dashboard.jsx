@@ -17,7 +17,7 @@ const ImageUpload = () => {
             setResult(''); // Clear previous results when replacing the image
         }
     });
-
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
 

@@ -24,7 +24,7 @@ app.post('/analyze', upload.single('image'), async (req, res) => {
             inputs: req.file.buffer.toString('base64'), // Convert image buffer to base64
         }, {
             headers: {
-                'Authorization': `Bearer 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`, // Replace with your API key
+                'Authorization': `Bearer ${process.env.HUGGING_FACE_API_KEY}`, // Replace with your API key
                 'Content-Type': 'application/json'
             }
         });
